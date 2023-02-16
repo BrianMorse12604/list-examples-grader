@@ -29,7 +29,6 @@ cut -d " " -f 3,6 last_line.txt > last_line_shorter.txt
 TESTS_RUN=`cut -d "," -f 1 last_line_shorter.txt`
 TESTS_FAILED=`cut -d "," -f 2 last_line_shorter.txt`
 TESTS_PASSED=$(( $TESTS_RUN - $TESTS_FAILED ))
-PERCENTAGE=$(( $TESTS_PASSED / $TESTS_FAILED ))
 
 echo "You passed" $TESTS_PASSED / $TESTS_RUN "tests"
 
