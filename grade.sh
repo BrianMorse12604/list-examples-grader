@@ -21,6 +21,7 @@ then
     cat error.txt
     exit
 fi
+echo "Compilation success"
 
 java -cp $CPATH2 org.junit.runner.JUnitCore TestListExamples > test_results.txt
 
